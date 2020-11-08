@@ -1,0 +1,847 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden; /* This removes extra space to the right of elements through mobile viewports */
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    text-decoration: none;
+  }
+  
+  body {
+      background-color: white;
+      margin: 0 auto;
+      font-family: 'Roboto', sans-serif;
+  }
+
+/* ================================= 
+  Colors
+==================================== */
+  /*    Aqua #1FCED1;
+        Aqua hover #04b8bb;
+        Fuchsia ##FC53A5;
+   */
+
+h1, h2, h3, h4 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 0em;
+    font-weight: 700;
+}
+
+h1 i {
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 0px;
+}
+
+h2 i {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+h3 i {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+h4 {
+    line-height: 1.25em;
+    overflow-y: hidden;
+}
+
+p, ul{
+    color: #595766;
+}
+
+li {
+    display: list-item;
+    margin-top: 5px;
+    list-style-type: armenian;
+}
+
+
+/* ================================= 
+  Alert
+==================================== */
+#alert-and-menu-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+#alert-above-nav {
+    background-color: #1FCED1;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    height: 50px;
+    width: 100%;
+
+}
+
+#alert-above-nav p {
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 500;
+    margin: auto;
+    font-size: 14px;
+}
+
+#x-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: white;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 100%;
+    padding: 4px;
+    margin: auto;
+}
+
+#x-container:hover {
+    background-color: #04b8bb;
+}
+
+/* ================================= 
+  Navbar
+==================================== */
+
+nav {
+	background-color: white;
+    display: block;
+    height: 70px;
+    overflow: hidden;
+    width: 100%;
+    font-weight: 700;
+    border-bottom: 1px solid grey;
+}
+
+/* Selects all children within nav*/
+nav * {
+    display: inline-block;
+
+}
+
+#nav-link-container {
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    float: right;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 55px;
+    margin-bottom: 8.5px;
+    cursor: pointer;
+    color: black;
+}
+
+nav a {
+    font-family: "Poppins", sans-serif;
+}
+
+nav a:hover {
+	color: #1FCED1;
+	transition: 0.3s;
+}
+
+nav a:not(:hover) {
+    background-color: none;
+    transition: 0.3s;
+}
+
+#login {
+    color: white;
+    margin-top: 14px;
+    background-color: #1FCED1;
+    padding: 10px 22px;
+    transition: 0.3s;
+}
+
+#login:hover {
+    background-color: #04b8bb;
+}
+
+#logo {
+    margin-top: 6px;
+    margin-left: 4.8%;
+    width: 100px;
+}
+
+#logo:hover {
+    opacity: 0.8;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+.mobile-nav-link {
+    display: none;
+}
+
+#top-image-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
+}
+
+#top-image-xxl {
+    width: 100%;
+    z-index: -2;
+}
+
+#top-image-768px {
+    display: none;
+}
+
+#top-image-576px {
+    display: none;
+}
+
+#top-image-text-container-768px {
+    display: none;
+}
+
+#top-image-text-container {
+    position: absolute;
+    top: 5vw;
+    margin-left: 5%;
+    width: 40%;
+}
+
+#top-image-new {
+    font-size: 50px;
+    font-size: 3.5vw;
+    color: #FC53A5;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.top-image-h3 {
+    font-size: 30px;
+    font-size: 2vw;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    color: white;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.top-image-h1 {
+    font-size: 50px;
+    font-size: 3.5vw;
+    margin-top: -10px;
+    line-height: 1.15;
+    color: white;
+    overflow: hidden;
+    padding-bottom: 30px;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#top-image-text-768px {
+    display: none;
+}
+
+.big-button {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: white;
+    background-color: #1FCED1;
+    padding: 10px 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.big-button:hover {
+    background-color: #04b8bb;
+    transition: 0.3s;
+}
+
+#NRT-logo-xxl {
+    margin-top: 40px;
+    width: 100px;
+    width: 10vw;
+    display: block;
+}
+
+#NRT-logo-768px {
+    display: none;
+}
+
+section {
+    margin: 50px auto;
+    text-align: center;
+}
+
+#meet-alffie {
+    width: 700px;
+}
+
+#meet-alffie p {
+    width: 630px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 700px;
+}
+
+video:focus {
+    /* get rid of the outline when clicking on the video. */
+    outline: none;
+}
+
+#covid-19 {
+    width: 700px;
+    text-align: left;
+}
+
+#paul-image-name-position {
+    flex-direction: column-reverse;
+    margin-bottom: 25px;
+}
+
+#name-position {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#name-position h3, #name-position h4 {
+    margin-top: 0px;
+}
+
+#paul-image {
+    width: 120px;
+    margin-left: 0px;
+    display: inline-block;
+}
+
+.covid-19-text-container {
+    position: relative;
+    height: 300px;
+    overflow-y: hidden;
+}
+
+.covid-19-text-container p, .covid-19-text-container h3 {
+    margin-top: 3px;
+}
+
+.covid-19-text-container h2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.fadeout {
+    position: absolute; 
+    bottom: 0em;
+    width: 100%;
+    height: 200px;
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    ); 
+    background-image: -moz-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.horizontal-line {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #1FCED1;
+}
+
+
+#see-all-courses {
+    color: #1FCED1;
+    width: 150px;
+    padding: 0.5em 1em;
+    margin: auto;
+    display: block;
+    outline: 2px;
+    outline-style: solid;
+    outline-color: #1FCED1;
+    font-weight: 800;
+    margin-top: 1em;
+    transition: 0.3s;
+}
+
+#see-all-courses:hover {
+    color: #04b8bb;
+    outline-color: #04b8bb;
+    background-color: #b6eded;
+    transition: 0.3s;
+}
+
+.course-container {
+    position: relative;
+    width: 4550px;
+    transition: 0.3s;
+    margin-left: 2.5%;
+    align-items: flex-start;
+    z-index: -1;
+}
+
+.course {
+    display: inline-block;
+    text-align: left;
+    width: 320px;
+    padding-top: 0;
+    height: 490px;
+    margin-bottom: 2em;
+    position: relative;
+    width: 286px;
+    margin-top: 2em;
+    overflow: hidden;
+}
+
+.course-image {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.course-code {
+    margin-top: 1em;
+    margin-bottom: -1.5em;
+}
+
+.course-new {
+    font-weight: 800;
+    color: #FC53A5;
+}
+
+.course-feature-title {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    margin: 0;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.course-vertical-divider-line {
+    border-left: 0.5px solid #c9c8d3;
+    height: 522px;
+    display: inline-block;
+    margin: 0 1em 0 1em;
+    position: top;
+}
+
+.learn-more, #covid-19-show-more {
+    color: #1FCED1;
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.learn-more:hover, #covid-19-show-more:hover {
+    color: #04b8bb;
+}
+
+#course-section {
+    position: relative;
+}
+
+
+.course-left-right-buttons {
+    margin-top: 40px;
+    background-color: #1FCED1;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    position: absolute;
+    top: 240px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.course-left-right-buttons:hover {
+    background-color: #04b8bb;
+}
+
+.course-left-right-buttons:focus {
+    outline: none;
+}
+
+#course-left {
+    left: 8px;
+}
+
+#course-right {
+    right: 8px;
+}
+
+#feature-container {
+    margin: auto;
+}
+
+
+.feature {
+    display: inline-block;
+    text-align: left;
+    width: 360px;
+    padding-top: 0;
+    height: 460px;
+    margin-bottom: 2em;
+    position: relative;
+    width: 286px;
+    margin-top: 2em;
+    overflow: hidden;
+}
+
+.feature-vertical-divider-line {
+    border-left: 0.5px solid #c9c8d3;
+    height: 492px;
+    display: inline-block;
+    margin: 0 1em 0 1em;
+    position: top;
+}
+
+.app-logo {
+    width: 140px;
+}
+
+.tick-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.tick {
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-top: 3px;
+}
+
+.tick-text {
+    margin: 0;
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #272633;
+    color: white;
+    text-align: center;
+}
+
+footer h3, footer p, footer div a {
+    color: white;
+}
+
+#footer-logo-white {
+    width: 200px;
+}
+
+#footer-RTO-number {
+    font-size: 12px;
+    color: #595766;
+}
+
+#footer-link-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-link-column {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.footer-link-child {
+    display: block;
+    font-size: 14px;
+    color: #c9c8d3;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+footer a:hover {
+    color: #1FCED1;
+}
+
+
+.social-media-logo-link {
+    margin: 1em;
+    width: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) {
+    #feature-container {
+        width: 620px;
+    }
+
+    .feature-vertical-divider-line:nth-of-type(4) {
+        display: none;
+    }
+
+
+@media only screen and (max-width: 800px) {
+    #logo {
+        width: 80px;
+        margin-top: 13px;
+    }
+
+    .nav-link {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    #meet-alffie {
+        width: 95%;
+    }
+
+    #meet-alffie p {
+        width: 95%;
+    }
+
+    .video-container {
+        width: 95%;
+    }
+
+    #covid-19 {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #top-image-xxl {
+        display: none;
+    }
+
+    #top-image-768px {
+        width: 100%;
+        z-index: -1;
+        display: block;
+    }
+
+    #top-image-text-container {
+        width: 90%;
+        height: 100%;
+    }
+
+    #top-image-text-container-768px {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    #top-image-text-768px {
+        display: inline-block;
+        color: white;
+        font-size: 2.35vw;
+        font-size: 25px;
+        line-height: 1.25;
+        font-weight: 800;
+        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        overflow-y: hidden;
+        height: 75px;
+        margin-bottom: 0;
+    }
+
+    #NRT-logo-768px {
+        display: inline-block;
+        width: 85px;
+        vertical-align: top;
+    }
+
+    #NRT-logo-xxl {
+        display: none;
+    }
+
+    .big-button {
+        font-size: 15px;
+    }
+
+    #top-image-new, .top-image-h3, .top-image-h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #top-image-text-768px {
+        font-size: 22px;
+    }
+
+    #feature-container {
+        width: 500px;
+    }
+
+    .feature-vertical-divider-line {
+        display: none;
+    }
+
+@media only screen and (max-width: 576px) {
+    p {
+        font-size: 15px;
+    }
+
+    #alert-above-nav p{
+        font-size: 12px;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        padding: 5px 5%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        border-bottom: 1px solid #c9c8d3;
+        width: 100%;
+        /* background-color: white; */
+    }
+
+    #mobile-menu-button {
+        width: 50px;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 18px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #mobile-menu-button:hover .menu-button-line{
+        background-color: #1FCED1;
+        transition: 0.2s;
+        
+    }
+
+    #mobile-menu-button div {
+        height: 5px;
+    }
+
+    .menu-button-line {
+        background-color: #595766;
+    }
+
+    #mobile-logo {
+        width: 100px;
+        display: inline;
+        overflow: hidden;
+    }
+
+    #mobile-login {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        display: inline;
+        color: white;
+        background-color: #1FCED1;
+        padding: 6px 15px;
+        height: 37px; 
+        margin-top: 11px;
+        flex-direction: column;
+    }
+
+    #mobile-login:hover {
+        background-color: #04b8bb;
+    }
+
+    #mobile-menu {
+        width: 100%;
+        background-color: white;
+        padding-bottom: 15px;
+        flex-direction: column;
+        display: none;
+        border-bottom: 1px solid #c9c8d3;
+        }
+
+    .mobile-nav-link {
+        display: inline-block;
+        color: black;
+        margin-top: 15px;
+        margin-left: 5%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+
+    .mobile-nav-link:hover {
+        color: #1FCED1;
+    }
+
+    #top-image-768px {
+        display: none;
+    }
+
+    #top-image-576px {
+        width: 100%;
+        z-index: -1;
+        display: block;
+    }
+
+    #NRT-logo-768px {
+        width: 70px;
+        margin-top: -15px;
+    }
+
+    #footer-logo-white {
+        width: 150px;
+    }
+
+    footer a {
+        font-size: 16px;
+        margin: 10px;
+    }
+}
