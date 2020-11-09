@@ -415,11 +415,12 @@ video:focus {
 }
 
 .course-container {
+    margin-top: 40px;
     position: relative;
     width: 4550px;
     transition: 0.3s;
     margin-left: 2.5%;
-    align-items: flex-start;
+    display: flex;
     z-index: -1;
 }
 
@@ -428,11 +429,11 @@ video:focus {
     text-align: left;
     width: 320px;
     padding-top: 0;
-    height: 490px;
+    height: auto;
     margin-bottom: 2em;
     position: relative;
     width: 286px;
-    margin-top: 2em;
+    margin-top: 0;
     overflow: hidden;
 }
 
@@ -462,9 +463,9 @@ video:focus {
     width: 100%;
 }
 
-.course-vertical-divider-line {
+.course-vertical-divider-line, .feature-vertical-divider-line {
     border-left: 0.5px solid #c9c8d3;
-    height: 522px;
+    height: auto;
     display: inline-block;
     margin: 0 1em 0 1em;
     position: top;
@@ -520,28 +521,33 @@ video:focus {
 
 #feature-container {
     margin: auto;
+    display: block;
+    margin-top: 20px;
 }
 
 
 .feature {
     display: inline-block;
     text-align: left;
-    width: 360px;
     padding-top: 0;
-    height: 460px;
+    height: auto;
     margin-bottom: 2em;
+    margin-top: 20px;
     position: relative;
+    /* width: 360px; */
     width: 286px;
-    margin-top: 2em;
     overflow: hidden;
+    vertical-align: top;
 }
 
 .feature-vertical-divider-line {
     border-left: 0.5px solid #c9c8d3;
-    height: 492px;
+    height: 470px;
     display: inline-block;
-    margin: 0 1em 0 1em;
+    margin: 20px 1em 0 1em;
+    position: top;
 }
+
 
 .app-logo {
     width: 140px;
@@ -622,13 +628,17 @@ footer h3 {
 .social-media-logo-link {
     margin: 1em;
     cursor: pointer;
-    margin
 }
 
 @media only screen and (max-width: 1400px) {
     #feature-container {
         width: 620px;
     }
+
+    .feature-vertical-divider-line:nth-of-type(2) {
+        height: 410px;
+    }
+
 
     .feature-vertical-divider-line:nth-of-type(4) {
         display: none;
@@ -726,7 +736,18 @@ footer h3 {
 @media only screen and (max-width: 660px) {
 
     #feature-container {
+        width: 360px;
+        margin-top: 0;
+    }
+
+    .feature {
+        height: auto;
+        margin-top: 40px;
         width: auto;
+    }
+
+    .feature-vertical-divider-line {
+        display: none;
     }
 
 @media only screen and (max-width: 576px) {
@@ -866,14 +887,6 @@ footer h3 {
         font-family: "Poppins", sans-serif;
         font-size: 15px;
         padding: 7px 14px;
-    }
-
-    .feature {
-        height: auto;
-    }
-
-    .feature-vertical-divider-line {
-        display: none;
     }
 
     #footer-logo-white {
