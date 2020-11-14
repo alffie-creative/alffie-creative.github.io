@@ -414,25 +414,29 @@ video:focus {
     transition: 0.3s;
 }
 
-.course-container {
+.all-course-container {
     margin-top: 40px;
     position: relative;
-    width: 4550px;
-    transition: 0.3s;
-    margin-left: 2.5%;
+    width: 4900px;
+    margin-left: -596px;
     display: flex;
     z-index: -1;
+}
+
+.course-container {
+    display: flex;
+    width: 318px;
+    transition: 0.2s;
 }
 
 .course {
     display: inline-block;
     text-align: left;
-    width: 320px;
     padding-top: 0;
     height: auto;
     margin-bottom: 2em;
     position: relative;
-    width: 286px;
+    /* width: 286px; */
     margin-top: 0;
     overflow: hidden;
 }
@@ -467,7 +471,7 @@ video:focus {
     border-left: 0.5px solid #c9c8d3;
     height: auto;
     display: inline-block;
-    margin: 0 1em 0 1em;
+    margin: 0 16px 0 16px;
     position: top;
 }
 
@@ -589,7 +593,6 @@ footer h3, footer p, footer div a {
 
 #footer-RTO-number {
     font-size: 12px;
-    color: #595766;
 }
 
 #footer-link-container {
