@@ -854,10 +854,11 @@ footer h3 {
         }
 
     .mobile-nav-link {
-        display: inline-block;
+        display: inline;
         color: black;
         margin-top: 15px;
         margin-left: 5%;
+        margin-right: auto;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         width: auto;
