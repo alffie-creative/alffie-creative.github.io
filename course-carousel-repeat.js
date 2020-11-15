@@ -6,7 +6,6 @@ var translateXcounter = 0;
 var coursesLeft = document.querySelector("#course-left");
 var coursesRight = document.querySelector("#course-right");
 var allCourses = document.querySelectorAll(".course-container");
-var alldots = document.querySelectorAll(".dot");
 
 coursesLeft.onclick = moveCoursesLeft;
 coursesRight.onclick = moveCoursesRight;
