@@ -418,7 +418,7 @@ video:focus {
     margin-top: 40px;
     position: relative;
     width: 4900px;
-    margin-left: -596px;
+    margin-left: -926px;
     display: flex;
     z-index: -1;
 }
@@ -807,8 +807,11 @@ footer h3 {
 
     #mobile-menu-button:hover .menu-button-line{
         background-color: #1FCED1;
-        transition: 0.2s;
-        
+        transition: 0.2s; 
+    }
+
+    #mobile-menu-button:focus .menu-button-line{
+        background-color: #595766;
     }
 
     #mobile-menu-button div {
@@ -857,6 +860,7 @@ footer h3 {
         margin-left: 5%;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
+        width: auto;
     }
 
     .mobile-nav-link:hover {
