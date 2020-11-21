@@ -35,8 +35,9 @@ h1 i {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 40px;
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 h2 i {
@@ -62,7 +63,7 @@ h4 {
 
 p, ul{
     color: #595766;
-    font-weight: 400;
+    margin-top: 0px;
 }
 
 li {
@@ -202,152 +203,58 @@ nav a:not(:hover) {
     display: none;
 }
 
-#top-image-container {
-    position: relative;
-    overflow: hidden;
-    margin-top: 120px;
-}
-
-#top-image-xxl {
-    width: 100%;
-    z-index: -2;
-}
-
-#top-image-768px {
-    display: none;
-}
-
-#top-image-576px {
-    display: none;
-}
-
-#top-image-text-container-768px {
-    display: none;
-}
-
-#top-image-text-container {
-    position: absolute;
-    top: 5vw;
-    margin-left: 5%;
-    width: 40%;
-}
-
-#top-image-new {
-    font-size: 50px;
-    font-size: 3.5vw;
-    color: #FC53A5;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.top-image-h3 {
-    font-size: 30px;
-    font-size: 2vw;
-    margin-top: 0px;
-    padding-bottom: 10px;
-    margin-bottom: 0px;
-    color: white;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.top-image-h1 {
-    font-size: 50px;
-    font-size: 3.5vw;
-    margin-top: -10px;
-    line-height: 1.15;
-    color: white;
-    overflow: hidden;
-    padding-bottom: 30px;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-#top-image-text-768px {
-    display: none;
-}
-
-.big-button {
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    font-size: 1.5vw;
-    font-weight: 700;
-    color: white;
-    background-color: #1FCED1;
-    padding: 10px 20px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.big-button:hover {
-    background-color: #04b8bb;
-    transition: 0.3s;
-}
-
-#NRT-logo-xxl {
-    margin-top: 40px;
-    width: 100px;
-    width: 10vw;
-    display: block;
-}
-
-#NRT-logo-768px {
-    display: none;
-}
-
 section {
     margin: 50px auto;
     text-align: center;
 }
 
+#page-title {
+    font-size: 100px;
+}
 
-.video-container {
-    position: relative;
-    display: inline-block;
+#page-title-section {
+    margin-top: 120px;
+    width: 700px;
+}
+
+#page-title-section p {
+    width: 500px;
     margin: auto;
-    width: 700px;
+    margin-bottom: 20px;
 }
 
-video:focus {
-    /* get rid of the outline when clicking on the video. */
-    outline: none;
+#purpose-mission-section {
+
 }
 
-#covid-19 {
-    width: 700px;
-    text-align: left;
-}
-
-#paul-image-name-position {
-    flex-direction: column-reverse;
-    margin-bottom: 25px;
-}
-
-#name-position {
+.purpose-mission {
     display: inline-block;
-    margin-left: 30px;
+    width: 500px;
+    vertical-align: top;
 }
 
-#name-position h3, #name-position h4 {
-    margin-top: 0px;
+#about-feature-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-#paul-image {
-    width: 120px;
-    margin-left: 0px;
+.about-feature {
     display: inline-block;
+    width: 300px;
+    margin: 20px;
+    vertical-align: top;
 }
 
-.covid-19-text-container {
-    position: relative;
-    height: 300px;
-    overflow-y: hidden;
+#who-we-serve-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.covid-19-text-container p, .covid-19-text-container h3 {
-    margin-top: 3px;
-}
-
-.covid-19-text-container h2 {
-    margin-top: 50px;
-    margin-bottom: 15px;
+.industry {
+    display: inline-block;
+    width: 550px;
+    margin: 20px;
+    vertical-align: top;
 }
 
 .fadeout {
@@ -381,81 +288,6 @@ video:focus {
     margin: 0;
     padding: 0;
     border-bottom: 1px solid #1FCED1;
-}
-
-
-#see-all-courses {
-    color: #1FCED1;
-    width: 150px;
-    padding: 0.5em 1em;
-    margin: auto;
-    display: block;
-    outline: 2px;
-    outline-style: solid;
-    outline-color: #1FCED1;
-    font-weight: 800;
-    margin-top: 1em;
-    transition: 0.3s;
-}
-
-#see-all-courses:hover {
-    color: #04b8bb;
-    outline-color: #04b8bb;
-    background-color: #b6eded;
-    transition: 0.3s;
-}
-
-.all-course-container {
-    margin-top: 40px;
-    position: relative;
-    width: 4900px;
-    margin-left: -926px;
-    display: flex;
-    z-index: -1;
-}
-
-.course-container {
-    display: flex;
-    width: 318px;
-    transition: 0.2s;
-}
-
-.course {
-    display: inline-block;
-    text-align: left;
-    padding-top: 0;
-    height: auto;
-    margin-bottom: 2em;
-    position: relative;
-    /* width: 286px; */
-    margin-top: 0;
-    overflow: hidden;
-}
-
-.course-image {
-    display: block;
-    margin-bottom: 1em;
-}
-
-.course-code {
-    margin-top: 1em;
-    margin-bottom: -1.5em;
-}
-
-.course-new {
-    font-weight: 800;
-    color: #FC53A5;
-}
-
-.course-feature-title {
-    font-size: 20px;
-    margin-bottom: 0.5em;
-}
-
-.description {
-    margin: 0;
-    margin-bottom: 1em;
-    width: 100%;
 }
 
 .course-vertical-divider-line, .feature-vertical-divider-line {
