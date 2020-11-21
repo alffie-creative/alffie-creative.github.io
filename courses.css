@@ -223,199 +223,66 @@ section {
     margin-bottom: 20px;
 }
 
-#purpose-mission-section {
-
-}
-
-.purpose-mission {
-    display: inline-block;
-    width: 500px;
-    vertical-align: top;
-}
-
-#about-feature-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.about-feature {
-    display: inline-block;
-    width: 300px;
-    margin: 20px;
-    vertical-align: top;
-}
-
-#who-we-serve-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.industry {
-    display: inline-block;
-    width: 550px;
-    margin: 20px;
-    vertical-align: top;
-}
-
-.fadeout {
-    position: absolute; 
-    bottom: 0em;
-    width: 100%;
-    height: 200px;
-    background: -webkit-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    ); 
-    background-image: -moz-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -o-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -ms-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-}
-
-.horizontal-line {
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #1FCED1;
-}
-
-.course-vertical-divider-line, .feature-vertical-divider-line {
-    border-left: 0.5px solid #c9c8d3;
-    height: auto;
-    display: inline-block;
-    margin: 0 16px 0 16px;
-    position: top;
-}
-
-.learn-more, #covid-19-show-more {
+.filter-courses-button {
     color: #1FCED1;
-    font-weight: 700;
-    margin-top: 15px;
+    width: auto;
+    padding: 0.5em 1em;
+    margin: auto;
+    display: inline-block;
+    outline: 2px;
+    outline-style: solid;
+    outline-color: #1FCED1;
+    font-weight: 800;
+    margin-top: 1em;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-.learn-more:hover, #covid-19-show-more:hover {
+.filter-courses-button:hover {
     color: #04b8bb;
+    outline-color: #04b8bb;
+    background-color: #b6eded;
+    transition: 0.3s;
+}
+
+#course-filter-section {
+
 }
 
 #course-section {
-    position: relative;
-}
-
-#dot-container {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin: auto;
-    margin-top: 25px;
-}
-
-.dot {
-    background-color: #c9c8d3;
-    height: 10px;
-    width: 10px;
-    border-radius: 100%;
-    transition: 0.3s;
-    margin: 0;
-}
-
-.dot:nth-child(1) {
-    background-color: #1FCED1;
-}
-
-
-.course-left-right-buttons {
-    margin-top: 40px;
-    background-color: #1FCED1;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 100%;
-    position: absolute;
-    top: 240px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-.course-left-right-buttons:hover {
-    background-color: #04b8bb;
-}
-
-.course-left-right-buttons:focus {
-    outline: none;
-}
-
-#course-left {
-    left: 8px;
-}
-
-#course-right {
-    right: 8px;
-}
-
-#feature-container {
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-}
-
-
-.feature {
-    display: inline-block;
     text-align: left;
-    padding-top: 0;
-    height: auto;
-    margin-bottom: 2em;
-    margin-top: 20px;
-    position: relative;
-    /* width: 360px; */
-    width: 286px;
-    overflow: hidden;
-    vertical-align: top;
 }
 
-.feature-vertical-divider-line {
-    border-left: 0.5px solid #c9c8d3;
-    height: 470px;
+.course {
+    display: block;
+    margin-bottom: 30px;
+    border: 1px solid #c9c8d3;
+    max-width: 90%;
+    margin: auto;
+    padding: 30px;
+}
+
+.course-new-text {
+    color: #FC53A5;
     display: inline-block;
-    margin: 20px 1em 0 1em;
-    position: top;
+    margin-bottom: 0px;
+    font-weight: 700;
 }
 
-
-.app-logo {
-    width: 140px;
+.course-code {
+    display: inline-block;
+    margin-bottom: 0px;
 }
 
-.tick-row {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 15px;
+.course-certificate-text {
+    margin-top: 0px;
+    font-size: 24px;
 }
 
-.tick {
-    margin-left: 0px;
-    margin-right: 10px;
-    padding-top: 3px;
+.course-name {
+    margin-top: 0px;
 }
 
-.tick-text {
-    margin: 0;
-}
 
 footer {
     margin-top: 50px;

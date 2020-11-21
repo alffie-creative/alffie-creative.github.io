@@ -26,6 +26,7 @@ p{
 
 #login-form {
     margin: 100px auto;
+    margin-bottom: 150px;
     max-width: 400px;
     background-color: white;
     padding: 30px;
@@ -38,16 +39,20 @@ p{
     margin-bottom: 20px;
 }
 
+.email-password-label {
+    font-weight: 700;
+}
 
 
 .email-password-input {
     display: block;
     margin-top: 5px;
-    /* margin-bottom: 20px; */
     height: 30px;
     width: 100%;
     transition: 0.2s;
     outline:none;
+    background-color:  #b6eded;
+    border: none;
 }
 
 .email-password-input:focus {
