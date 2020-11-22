@@ -214,15 +214,14 @@ section {
 }
 
 #page-title-section {
-    margin-top: 80px;
-    width: 700px;
+    width: 500px;
+    max-width: 95%;
+    margin: 100px auto 20px;
 }
 
-#page-title-section p {
-    width: 500px;
-    margin: auto;
+/* #page-title-section p {
     margin-bottom: 20px;
-}
+} */
 
 #course-filter-section {
     margin-top: 0px;
@@ -259,6 +258,7 @@ section {
     margin-bottom: 30px;
     border: 1px solid #c9c8d3;
     width: 660px;
+    max-width: 95%;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -327,6 +327,20 @@ section {
     background-color: #04b8bb;
 }
 
+.download-brochure {
+    font-weight: 700;
+    color: #1FCED1;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 30px;
+    transition: 0.2;
+    margin-bottom: 10px;
+}
+
+.download-brochure:hover {
+    color: #04b8bb;
+}
+
 
 footer {
     margin-top: 50px;
@@ -391,18 +405,6 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1400px) {
-    #feature-container {
-        width: 620px;
-    }
-
-    .feature-vertical-divider-line:nth-of-type(2) {
-        height: 410px;
-    }
-
-
-    .feature-vertical-divider-line:nth-of-type(4) {
-        display: none;
-    }
 
 
 @media only screen and (max-width: 800px) {
