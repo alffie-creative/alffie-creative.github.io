@@ -15,12 +15,13 @@
 </head>
 <body>
 
-    <section data-aos-duration="500" id="login-form">
+    <section id="login-form" data-aos="fade-up" data-aos-duration="500">
         <a href="index.html"><img src="images/alffie-logo-aqua.svg" alt="" id="alffie-logo"></a>
+        <p>Hello. Please login to your <em>alffie</em> account</p>
         <form action="/action_page.php">
-            <label for="email">Email</label>
+            <label for="email" class="email-password-label">Email</label>
             <input type="email" id="email" name="email" class="email-password-input">
-            <label for="password" id="password-label">Password</label>
+            <label for="password" id="password-label" class="email-password-label">Password</label>
             <input type="password" id="password" name="password" class="email-password-input">
             <input type="checkbox" id="show-password-checkbox" value="sdf" name="Show password">
             <label for="checkbox" id="show-password-label">Show password</label>

@@ -204,7 +204,7 @@ nav a:not(:hover) {
 }
 
 section {
-    margin: 50px auto;
+    margin: auto;
     text-align: center;
 }
 
@@ -213,7 +213,7 @@ section {
 }
 
 #page-title-section {
-    margin-top: 120px;
+    margin-top: 80px;
     width: 700px;
 }
 
@@ -223,13 +223,18 @@ section {
     margin-bottom: 20px;
 }
 
+#course-filter-section {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 .filter-courses-button {
     color: #1FCED1;
     width: auto;
     padding: 0.5em 1em;
-    margin: auto;
+    margin: 10px;
     display: inline-block;
-    outline: 2px;
+    outline: 1.5px;
     outline-style: solid;
     outline-color: #1FCED1;
     font-weight: 800;
@@ -245,33 +250,43 @@ section {
     transition: 0.3s;
 }
 
-#course-filter-section {
-
-}
-
 #course-section {
-    text-align: left;
+    text-align: center;
 }
 
 .course {
-    display: block;
     margin-bottom: 30px;
     border: 1px solid #c9c8d3;
-    max-width: 90%;
-    margin: auto;
+    width: 660px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 30px;
+    text-align: left;
 }
+
+.course-title-nrt-logo-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.course-title-container {
+    display: inline-block;
+    width: 500px;
+}
+
 
 .course-new-text {
     color: #FC53A5;
     display: inline-block;
-    margin-bottom: 0px;
+    margin-bottom: -4px;
     font-weight: 700;
 }
 
 .course-code {
     display: inline-block;
-    margin-bottom: 0px;
+    margin-bottom: -4px;
 }
 
 .course-certificate-text {
@@ -280,7 +295,35 @@ section {
 }
 
 .course-name {
+    margin-top: -8px;
+    font-size: 32px;
+}
+
+.nrt-logo {
+    display: inline-block;
+    margin-top: -4px;
+    width: 135px;
     margin-top: 0px;
+    margin-left: 30px;
+}
+
+.course-description {
+    display: block;
+}
+
+.learn-more {
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #1FCED1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #04b8bb;
 }
 
 
