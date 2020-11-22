@@ -6,7 +6,7 @@
     <title>alffie - Changing people's lives through technology and education</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="meet-alffie.css">
+    <link rel="stylesheet" href="contact.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -52,13 +52,18 @@
             <p>We're an experienced registered training organisation (RTO) with an unparalleled passion for technology and education.</p>
     </section>
 
-    <section id="purpose-mission-section">
+    <section id="login-form" data-aos="fade-up" data-aos-duration="500">
+        <a href="index.html"><img src="images/alffie-logo-aqua.svg" alt="" id="alffie-logo"></a>
+        <p>Hello. Please login to your <em>alffie</em> account</p>
         <form action="/action_page.php">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
-            <input type="submit" value="Submit">
+            <label for="email" class="email-password-label">Email</label>
+            <input type="email" id="email" name="email" class="email-password-input">
+            <label for="password" id="password-label" class="email-password-label">Password</label>
+            <input type="password" id="password" name="password" class="email-password-input">
+            <input type="checkbox" id="show-password-checkbox" value="sdf" name="Show password">
+            <label for="checkbox" id="show-password-label">Show password</label>
+            <p><a href="" id="forgot-your-password">Forgotten your password?</a></p>
+            <input type="submit" value="Login" id="login-button">
           </form>
     </section>
 

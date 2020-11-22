@@ -223,198 +223,97 @@ section {
     margin-bottom: 20px;
 }
 
-#purpose-mission-section {
-
+#login-form {
+    margin: 100px auto;
+    margin-bottom: 150px;
+    max-width: 400px;
+    background-color: white;
+    padding: 30px;
+    border: 1.5px solid #c9c8d3;
 }
 
-.purpose-mission {
-    display: inline-block;
-    width: 500px;
-    vertical-align: top;
+#alffie-logo {
+    width: 150px;
+    margin-left: -5px;
+    margin-bottom: 20px;
 }
 
-#about-feature-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.about-feature {
-    display: inline-block;
-    width: 300px;
-    margin: 20px;
-    vertical-align: top;
-}
-
-#who-we-serve-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.industry {
-    display: inline-block;
-    width: 550px;
-    margin: 20px;
-    vertical-align: top;
-}
-
-.fadeout {
-    position: absolute; 
-    bottom: 0em;
-    width: 100%;
-    height: 200px;
-    background: -webkit-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    ); 
-    background-image: -moz-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -o-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -ms-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-}
-
-.horizontal-line {
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #1FCED1;
-}
-
-.course-vertical-divider-line, .feature-vertical-divider-line {
-    border-left: 0.5px solid #c9c8d3;
-    height: auto;
-    display: inline-block;
-    margin: 0 16px 0 16px;
-    position: top;
-}
-
-.learn-more, #covid-19-show-more {
-    color: #1FCED1;
+.email-password-label {
     font-weight: 700;
-    margin-top: 15px;
-    cursor: pointer;
 }
 
-.learn-more:hover, #covid-19-show-more:hover {
-    color: #04b8bb;
+
+.email-password-input {
+    display: block;
+    margin-top: 5px;
+    height: 30px;
+    width: 100%;
+    transition: 0.2s;
+    outline:none;
+    background-color: #b6eded;
+    border: none;
 }
 
-#course-section {
-    position: relative;
+.email-password-input:focus {
+    border: 1.5px solid #1FCED1;
+    outline:none;
 }
 
-#dot-container {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin: auto;
-    margin-top: 25px;
+#password-label {
+    margin-top: 30px;
 }
 
-.dot {
-    background-color: #c9c8d3;
-    height: 10px;
-    width: 10px;
-    border-radius: 100%;
-    transition: 0.3s;
-    margin: 0;
+#show-password-checkbox {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-.dot:nth-child(1) {
+#show-password-label {
+    display: inline-block;
+}
+
+label {
+    margin-top: 0;
+    display: inline-block;
+}
+
+#login-button {
+    display: block;
+    width: auto;
+    margin-top: 30px;
     background-color: #1FCED1;
-}
-
-
-.course-left-right-buttons {
-    margin-top: 40px;
-    background-color: #1FCED1;
-    font-family: "Poppins", sans-serif;
     color: white;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 100%;
-    position: absolute;
-    top: 240px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-.course-left-right-buttons:hover {
-    background-color: #04b8bb;
-}
-
-.course-left-right-buttons:focus {
-    outline: none;
-}
-
-#course-left {
-    left: 8px;
-}
-
-#course-right {
-    right: 8px;
-}
-
-#feature-container {
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-}
-
-
-.feature {
-    display: inline-block;
-    text-align: left;
-    padding-top: 0;
+    margin-bottom: 0;
     height: auto;
-    margin-bottom: 2em;
-    margin-top: 20px;
-    position: relative;
-    /* width: 360px; */
-    width: 286px;
-    overflow: hidden;
-    vertical-align: top;
+    transition: 0.2s;
 }
 
-.feature-vertical-divider-line {
-    border-left: 0.5px solid #c9c8d3;
-    height: 470px;
-    display: inline-block;
-    margin: 20px 1em 0 1em;
-    position: top;
+#login-button:hover {
+    background-color:  #04b8bb;
 }
 
-
-.app-logo {
-    width: 140px;
+#forgot-your-password {
+    display: block;
+    margin-top: 15px;
+    color: #1FCED1;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
 }
 
-.tick-row {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 15px;
-}
-
-.tick {
-    margin-left: 0px;
-    margin-right: 10px;
-    padding-top: 3px;
-}
-
-.tick-text {
-    margin: 0;
+#forgot-your-password:hover {
+    color: #04b8bb;
+    text-decoration: underline;
 }
 
 footer {
