@@ -316,6 +316,9 @@ label {
     text-decoration: underline;
 }
 
+
+/* Footer */
+
 footer {
     margin-top: 50px;
     padding-top: 50px;
@@ -378,47 +381,8 @@ footer a:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1400px) {
-    #feature-container {
-        width: 620px;
-    }
-
-    .feature-vertical-divider-line:nth-of-type(2) {
-        height: 410px;
-    }
-
-
-    .feature-vertical-divider-line:nth-of-type(4) {
-        display: none;
-    }
-
 
 @media only screen and (max-width: 800px) {
-    #logo {
-        width: 80px;
-        margin-top: 13px;
-    }
-
-    .nav-link {
-        margin-right: 20px;
-        font-size: 15px;
-    }
-
-    #meet-alffie {
-        width: 95%;
-    }
-
-    #meet-alffie p {
-        width: 95%;
-    }
-
-    .video-container {
-        width: 95%;
-    }
-
-    #covid-19 {
-        width: 90%;
-    }
 
     #footer-link-container {
         width: 530px;
@@ -427,93 +391,11 @@ footer a:hover {
 
 @media only screen and (max-width: 768px) {
 
-    #top-image-xxl {
-        display: none;
-    }
-
-    #top-image-768px {
-        width: 100%;
-        z-index: -1;
-        display: block;
-    }
-
-    #top-image-text-container {
-        width: 90%;
-        height: 100%;
-    }
-
-    #top-image-text-container-768px {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 12px;
-    }
-
-    #top-image-text-768px {
-        display: inline-block;
-        color: white;
-        font-size: 2.35vw;
-        font-size: 25px;
-        line-height: 1.25;
-        font-weight: 800;
-        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-        overflow-y: hidden;
-        height: 75px;
-        margin-bottom: 0;
-    }
-
-    #NRT-logo-768px {
-        display: inline-block;
-        width: 85px;
-        vertical-align: top;
-    }
-
-    #NRT-logo-xxl {
-        display: none;
-    }
-
-    .big-button {
-        font-size: 15px;
-    }
-
-    #top-image-new, .top-image-h3, .top-image-h1 {
-        display: none;
-    }
-
-    #dot-container {
-        width: 350px;
-    }
-
-    .dot {
-        height: 8px;
-        width: 8px;
-    }
-
     #footer-link-container {
         width: 500px;
         margin: auto;
     }
 }
-
-@media only screen and (max-width: 660px) {
-
-    #feature-container {
-        width: 360px;
-        margin-top: 0;
-    }
-
-    .feature {
-        height: auto;
-        margin-top: 40px;
-        width: auto;
-    }
-
-    .feature-vertical-divider-line {
-        display: none;
-    }
-
-    #dot-container {
-        width: 300px;
-    }
 
 @media only screen and (max-width: 576px) {
     h1 {
@@ -529,143 +411,16 @@ footer a:hover {
         font-weight: 900;
     }
     
-    .course-feature-title, h4 {
+    h4 {
         font-size: 17px;
     }
 
-    p, .course-code, .course-new  {
+    p  {
         font-size: 15px;
     }
 
-    #alert-above-nav p{
+    p{
         font-size: 12px;
-    }
-    
-    nav {
-        display: none;
-    }
-
-    #mobile-nav {
-        padding: 5px 5%;
-        height: 70px;
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-        border-bottom: 1px solid #c9c8d3;
-        width: 100%;
-        background-color: white;
-    }
-
-    #mobile-menu-button {
-        width: 50px;
-        display: inline-block;
-        cursor: pointer;
-        margin-top: 18px;
-        height: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    #mobile-menu-button:hover .menu-button-line{
-        background-color: #1FCED1;
-        transition: 0.2s; 
-    }
-
-    #mobile-menu-button:focus .menu-button-line{
-        background-color: #595766;
-    }
-
-    #mobile-menu-button div {
-        height: 5px;
-    }
-
-    .menu-button-line {
-        background-color: #595766;
-    }
-
-    #mobile-logo {
-        width: 100px;
-        display: inline;
-        overflow: hidden;
-    }
-
-    #mobile-login {
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        display: inline;
-        color: white;
-        background-color: #1FCED1;
-        padding: 6px 15px;
-        height: 37px; 
-        margin-top: 11px;
-        flex-direction: column;
-    }
-
-    #mobile-login:hover {
-        background-color: #04b8bb;
-    }
-
-    #mobile-menu {
-        width: 100%;
-        background-color: white;
-        padding-bottom: 15px;
-        flex-direction: column;
-        display: none;
-        border-bottom: 1px solid #c9c8d3;
-        }
-
-    .mobile-nav-link {
-        display: inline;
-        color: black;
-        margin-top: 15px;
-        margin-left: 5%;
-        margin-right: auto;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        width: auto;
-    }
-
-    .mobile-nav-link:hover {
-        color: #1FCED1;
-    }
-
-    #top-image-text-768px {
-        font-size: 20px;
-        font-size: 4.2vw;
-        height: 100%;
-        width: 75%;
-        margin-bottom: 10px;
-    }
-
-    #top-image-768px {
-        display: none;
-    }
-
-    #top-image-576px {
-        width: 100%;
-        z-index: -1;
-        display: block;
-    }
-
-    #NRT-logo-768px {
-        width: 70px;
-        margin-top: -15px;
-    }
-
-    .big-button {
-        font-family: "Poppins", sans-serif;
-        font-size: 15px;
-        padding: 7px 14px;
-    }
-
-    #dot-container {
-        width: 280px;
-    }
-
-    .dot {
-        height: 7px;
-        width: 7px;
     }
 
     #footer-logo-white {

@@ -25,7 +25,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 70px;
     margin-bottom: 0em;
     font-weight: 700;
 }
@@ -69,137 +69,6 @@ li {
     display: list-item;
     margin-top: 5px;
     list-style-type: armenian;
-}
-
-
-/* ================================= 
-  Alert
-==================================== */
-#alert-and-menu-container {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-}
-
-#alert-above-nav {
-    background-color: #1FCED1;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    height: 50px;
-    width: 100%;
-
-}
-
-#alert-above-nav p {
-    color: white;
-    margin-top: 10px;
-    display: inline-block;
-    font-weight: 500;
-    margin: auto;
-    font-size: 14px;
-}
-
-#x-container {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 20px;
-    background-color: white;
-    min-height: 20px;
-    min-width: 20px;
-    border-radius: 100%;
-    padding: 4px;
-    margin: auto;
-}
-
-#x-container:hover {
-    background-color: #04b8bb;
-}
-
-/* ================================= 
-  Navbar
-==================================== */
-
-nav {
-	background-color: white;
-    display: block;
-    height: 70px;
-    overflow: hidden;
-    width: 100%;
-    font-weight: 700;
-    border-bottom: 1px solid grey;
-}
-
-/* Selects all children within nav*/
-nav * {
-    display: inline-block;
-
-}
-
-#nav-link-container {
-    margin: 0;
-    margin-right: 20px;
-    padding: 0;
-    float: right;
-    
-}
-
-.nav-link {
-    text-decoration: none;
-    margin-right: 55px;
-    margin-bottom: 8.5px;
-    cursor: pointer;
-    color: black;
-}
-
-nav a {
-    font-family: "Poppins", sans-serif;
-}
-
-nav a:hover {
-	color: #1FCED1;
-	transition: 0.3s;
-}
-
-nav a:not(:hover) {
-    background-color: none;
-    transition: 0.3s;
-}
-
-#login {
-    color: white;
-    margin-top: 14px;
-    background-color: #1FCED1;
-    padding: 10px 22px;
-    transition: 0.3s;
-}
-
-#login:hover {
-    background-color: #04b8bb;
-}
-
-#logo {
-    margin-top: 6px;
-    margin-left: 4.8%;
-    width: 100px;
-}
-
-#logo:hover {
-    opacity: 0.8;
-}
-
-#mobile-nav {
-    display: none;
-}
-
-#mobile-menu {
-    display: none;
-}
-
-.mobile-nav-link {
-    display: none;
 }
 
 #top-image-container {
@@ -648,6 +517,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1400px) {
+   
     #feature-container {
         width: 620px;
     }
@@ -663,15 +533,6 @@ footer a:hover {
 
 
 @media only screen and (max-width: 800px) {
-    #logo {
-        width: 80px;
-        margin-top: 13px;
-    }
-
-    .nav-link {
-        margin-right: 20px;
-        font-size: 15px;
-    }
 
     #meet-alffie {
         width: 95%;
@@ -804,99 +665,6 @@ footer a:hover {
 
     p, .course-code, .course-new  {
         font-size: 15px;
-    }
-
-    #alert-above-nav p{
-        font-size: 12px;
-    }
-    
-    nav {
-        display: none;
-    }
-
-    #mobile-nav {
-        padding: 5px 5%;
-        height: 70px;
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-        border-bottom: 1px solid #c9c8d3;
-        width: 100%;
-        background-color: white;
-    }
-
-    #mobile-menu-button {
-        width: 50px;
-        display: inline-block;
-        cursor: pointer;
-        margin-top: 18px;
-        height: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    #mobile-menu-button:hover .menu-button-line{
-        background-color: #1FCED1;
-        transition: 0.2s; 
-    }
-
-    #mobile-menu-button:focus .menu-button-line{
-        background-color: #595766;
-    }
-
-    #mobile-menu-button div {
-        height: 5px;
-    }
-
-    .menu-button-line {
-        background-color: #595766;
-    }
-
-    #mobile-logo {
-        width: 100px;
-        display: inline;
-        overflow: hidden;
-    }
-
-    #mobile-login {
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        display: inline;
-        color: white;
-        background-color: #1FCED1;
-        padding: 6px 15px;
-        height: 37px; 
-        margin-top: 11px;
-        flex-direction: column;
-    }
-
-    #mobile-login:hover {
-        background-color: #04b8bb;
-    }
-
-    #mobile-menu {
-        width: 100%;
-        background-color: white;
-        padding-bottom: 15px;
-        flex-direction: column;
-        display: none;
-        border-bottom: 1px solid #c9c8d3;
-        }
-
-    .mobile-nav-link {
-        display: inline;
-        color: black;
-        margin-top: 15px;
-        margin-left: 5%;
-        margin-right: auto;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        width: auto;
-    }
-
-    .mobile-nav-link:hover {
-        color: #1FCED1;
     }
 
     #top-image-text-768px {
