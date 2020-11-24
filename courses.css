@@ -117,18 +117,37 @@ section {
 
 #course-section {
     text-align: center;
+    max-width: 90%;
 }
 
 .course {
     margin-bottom: 30px;
-    border: 1px solid #c9c8d3;
-    width: 660px;
-    max-width: 95%;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
+    margin: auto;
+    width: 500px;
+    margin-bottom: 100px;
     text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.vertical-divider-line {
+    border-left: 1px solid  #c9c8d3;
+    vertical-align: top;
+    height: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.course-image {
+    background-color:  #c9c8d3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 16px;
 }
 
 .course-title-nrt-logo-container {
@@ -139,9 +158,8 @@ section {
 
 .course-title-container {
     display: inline-block;
-    width: 500px;
+    width: 80%;
 }
-
 
 .course-new-text {
     color: #FC53A5;
@@ -167,10 +185,9 @@ section {
 
 .nrt-logo {
     display: inline-block;
-    margin-top: -4px;
-    width: 135px;
-    margin-top: 0px;
-    margin-left: 30px;
+    margin-left: auto;
+    width: 15%;
+    vertical-align: top;
 }
 
 .course-description {
@@ -204,6 +221,27 @@ section {
 
 .download-brochure:hover {
     color: #04b8bb;
+}
+
+#supply-chain-image {
+    background-image: url("images/Courses/supply-chain.jpg");
+}
+
+@media only screen and (max-width: 1500px) {
+    .vertical-divider-line:nth-of-type(2n) {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1205px) {
+    .course {
+        display: block;
+    }
+
+    .vertical-divider-line {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 576px) {
