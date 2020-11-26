@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden; /* This removes extra space to the right of elements through mobile viewports */
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    text-decoration: none;
+  }
+  
+  body {
+      background-color: white;
+      margin: 0 auto;
+      font-family: 'Roboto', sans-serif;
+  }
+
+/* ================================= 
+  Colors
+==================================== */
+  /*    Aqua #1FCED1;
+        Aqua hover #04b8bb;
+        Fuchsia ##FC53A5;
+   */
+
+h1, h2, h3, h4 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 65px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+
+h4 {
+    line-height: 1.25em;
+    overflow-y: hidden;
+}
+
+p {
+    color: #595766;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+ul {
+    color: #595766;
+    font-weight: 400;
+    margin: 0px;
+}
+
+li {
+    display: list-item;
+    margin-top: 10px;
+}
+
+section {
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    width: 650px;
+    max-width: 90%;
+}
+
+#nrt-logo {
+    width: 130px;
+    margin-bottom: 30px;
+}
+
+#main-course-image {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.horizontal-line {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #1FCED1;
+}
+
+
+p a {
+    color: #1FCED1;
+    cursor: pointer;
+}
+
+p a:hover {
+    color: #04b8bb;
+}
+
+@media only screen and (max-width: 1400px) {
+   
+    #feature-container {
+        width: 620px;
+    }
+
+    .feature-vertical-divider-line:nth-of-type(2) {
+        height: 410px;
+    }
+
+
+    .feature-vertical-divider-line:nth-of-type(4) {
+        display: none;
+    }
+
+
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #top-image-xxl {
+        display: none;
+    }
+
+    #top-image-768px {
+        width: 100%;
+        z-index: -1;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p  {
+        font-size: 16px;
+    }
+
+    #top-image-768px {
+        display: none;
+    }
+
+    #top-image-576px {
+        width: 100%;
+        z-index: -1;
+        display: block;
+    }
+}
