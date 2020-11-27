@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     font-size: 28px;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
     margin-top: 0px;
 }
 
@@ -70,7 +70,7 @@ li {
 section {
     display: block;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 170px;
     margin-bottom: 50px;
     width: 650px;
     max-width: 90%;
@@ -81,9 +81,20 @@ section {
     margin-bottom: 30px;
 }
 
+#code-cert-text {
+    margin-bottom: -15px;
+}
+
+#cost {
+    color: #1FCED1;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
 #main-course-image {
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .horizontal-line {

@@ -73,10 +73,10 @@ li {
 }
 
 section {
-    margin: 50px auto;
+    margin: auto;
     text-align: left;
     overflow-y: hidden;
-    max-width: 95%;
+    max-width: 90%;
 }
 
 #page-title {

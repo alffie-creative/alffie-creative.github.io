@@ -384,7 +384,7 @@ video:focus {
     cursor: pointer;
     border-radius: 100%;
     position: absolute;
-    top: 240px;
+    top: 330px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 

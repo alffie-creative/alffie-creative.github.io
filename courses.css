@@ -183,9 +183,14 @@ section {
     font-size: 32px;
 }
 
+.course-price {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
 .nrt-logo {
     display: inline-block;
-    margin-left: auto;
+    margin-left: 30px;
     width: 15%;
     vertical-align: top;
 }
@@ -224,7 +229,59 @@ section {
 }
 
 #supply-chain-image {
-    background-image: url("images/Courses/supply-chain.jpg");
+    background-image: url("images/Courses/supply-chain-500px.jpg");
+}
+
+#edu-support-image {
+    background-image: url("images/Courses/edu-support-500px.jpg");
+}
+
+#recordkeeping-image {
+    background-image: url("images/Courses/recordkeeping-500px.jpg");
+}
+
+#retail-image {
+    background-image: url("images/Courses/retail-500px.jpg");
+}
+
+#b2b-image {
+    background-image: url("images/Courses/b2b-500px.jpg");
+}
+
+#home-community-image {
+    background-image: url("images/Courses/home-community-500px.jpg");
+}
+
+#ageing-image {
+    background-image: url("images/Courses/ageing-500px.jpg");
+}
+
+#disability-image {
+    background-image: url("images/Courses/disability-500px.jpg");
+}
+
+#community-services-image {
+    background-image: url("images/Courses/comm-services-500px.jpg");
+}
+
+#tourism-image {
+    background-image: url("images/Courses/tourism-500px.jpg");
+}
+
+#hospitality-image {
+    background-image: url("images/Courses/hospitality-500px.jpg");
+}
+
+#cleaning-operations-image {
+    background-image: url("images/Courses/cleaning-500px.jpg");
+}
+
+#customer-engagement-image {
+    background-image: url("images/Courses/customer-engagement-500px.jpg");
+}
+
+#business-image {
+    background-image: url("images/Courses/business-500px.jpg");
 }
 
 @media only screen and (max-width: 1500px) {
