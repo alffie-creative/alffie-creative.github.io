@@ -24,16 +24,6 @@ h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-size: 44px;
-    margin-bottom: 0em;
-    font-weight: 700;
-}
-
-h1 i {
-    font-weight: 800;
-}
-
 h2 {
     font-size: 40px;
     margin-top: 0px;
@@ -49,11 +39,6 @@ h3 {
     font-size: 18px;
     margin-bottom: 0px;
     font-weight: 700;
-}
-
-h3 i {
-    font-weight: 800;
-    font-size: 20px;
 }
 
 h4 {
@@ -80,6 +65,7 @@ section {
 
 #page-title {
     font-size: 100px;
+    margin-bottom: 0px;
 }
 
 #page-title-section {
@@ -117,6 +103,7 @@ section {
 
 #course-section {
     text-align: center;
+    width: 1700px;
     max-width: 90%;
 }
 
@@ -133,11 +120,15 @@ section {
 .vertical-divider-line {
     border-left: 1px solid  #c9c8d3;
     vertical-align: top;
-    height: 600px;
+    height: 700px;
     margin-left: 30px;
     margin-right: 30px;
     display: inline-block;
     margin-bottom: 100px;
+}
+
+.vertical-divider-line:nth-child(6n) {
+    display: none;
 }
 
 .course-image {
@@ -150,37 +141,31 @@ section {
     margin-bottom: 16px;
 }
 
-.course-title-nrt-logo-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.course-title-container {
-    display: inline-block;
-    width: 80%;
-}
-
 .course-new-text {
     color: #FC53A5;
-    display: inline-block;
-    margin-bottom: -4px;
     font-weight: 700;
-}
-
-.course-code {
-    display: inline-block;
-    margin-bottom: -4px;
 }
 
 .course-certificate-text {
     margin-top: 0px;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .course-name {
     margin-top: -8px;
-    font-size: 32px;
+    font-size: 38px;
+}
+
+.course-name-medium {
+    font-size: 35px;
+}
+
+.course-name-long {
+    margin-top: 0px;
+    font-size: 28px;
+    line-height: 1.2;
+    overflow: hidden;
 }
 
 .course-price {
@@ -201,6 +186,7 @@ section {
 
 .learn-more {
     display: inline-block;
+    font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
     padding: 10px 20px;
@@ -215,6 +201,7 @@ section {
 }
 
 .download-brochure {
+    font-size: 18px;
     font-weight: 700;
     color: #1FCED1;
     cursor: pointer;
@@ -284,8 +271,8 @@ section {
     background-image: url("images/Courses/business-500px.jpg");
 }
 
-@media only screen and (max-width: 1500px) {
-    .vertical-divider-line:nth-of-type(2n) {
+@media only screen and (max-width: 1700px) {
+    .vertical-divider-line:nth-of-type(2n-1) {
         display: none;
     }
 }
@@ -302,24 +289,46 @@ section {
 }
 
 @media only screen and (max-width: 576px) {
-    h1 {
-        font-size: 26px;
+    
+    #page-title {
+        font-size: 18vw;
+    }
+ 
+    .course {
+        width: auto;
     }
 
-    h2 {
-        font-size: 22px;
+    .course-image {
+        width: auto;
     }
 
-    h2 i {
-        font-size: 23px;
-        font-weight: 900;
+    .course-certificate-text {
+        font-size: 16px;
+    }
+
+    .course-name {
+        font-size: 36px;
+    }
+
+    .course-name-medium {
+        font-size: 28px;
+    }
+
+    .course-name-long {
+        font-size: 24px;
     }
     
     .course-feature-title, h4 {
         font-size: 17px;
     }
 
-    p, .course-code, .course-new-text  {
+    p, .course-code, .course-new-text, .course-description {
+        font-size: 15px;
+        width: auto;
+    }
+
+    .learn-more, .download-brochure {
         font-size: 15px;
     }
+
 }
