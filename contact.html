@@ -39,7 +39,7 @@
                 <div class="menu-button-line"></div>
             </span>
             <a href="index.html" id="mobile-logo"><img src="images/alffie-logo-aqua.svg" alt="alffie logo"></a>
-            <a href="https://secure.alffie.com/login?service=https%3A%2F%2Fapp.alffie.com%2F" id="mobile-login">Login</a>
+            <a href="login.html" id="mobile-login">Login</a>
         </div>
         <span id="mobile-menu">
             <a href="index.html" class="mobile-nav-link">Home</a>
@@ -51,22 +51,54 @@
 
     <section id="page-title-section" data-aos-duration="500">
             <h1 id="page-title">Contact</h1>
-            <p>We're an experienced registered training organisation (RTO) with an unparalleled passion for technology and education.</p>
+            <p>Having trouble logging in? Need help with your course? Look no further!</p>
+            <p>We’re here to answer your questions and help you every step of the way.</p>
+            <p>Give our friendly support team a call or send them a help request. We'll do our very best to get back to you within 24 hours.</p>
+            <h3>1300 253 343</h3>
+        <h3>support@alffie.com</h3>
+        <h3>Operating hours: 9am to 6pm AEST Monday to Friday</h3>     
     </section>
 
-    <section id="login-form" data-aos="fade-up" data-aos-duration="500">
-        <a href="index.html"><img src="images/alffie-logo-aqua.svg" alt="" id="alffie-logo"></a>
-        <p>Hello. Please login to your <em>alffie</em> account</p>
+    <section id="message-form" data-aos="fade-up" data-aos-duration="500">
+        <h2>Send us a message</h2>
         <form action="/action_page.php">
-            <label for="email" class="email-password-label">Email</label>
-            <input type="email" id="email" name="email" class="email-password-input">
-            <label for="password" id="password-label" class="email-password-label">Password</label>
-            <input type="password" id="password" name="password" class="email-password-input">
-            <input type="checkbox" id="show-password-checkbox" value="sdf" name="Show password">
-            <label for="checkbox" id="show-password-label">Show password</label>
-            <p><a href="" id="forgot-your-password">Forgotten your password?</a></p>
-            <input type="submit" value="Login" id="login-button">
+            <label for="fname" >First name *</label>
+            <input type="text" id=fname name="firstname">
+
+            <label for="lname" >Last name *</label>
+            <input type="text" id="lname" name="lastname">
+
+            <label for="phone" >Phone number*</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="email" >Email *</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message" >Message *</label>
+            <!-- <input type="textarea" id="message" name="message"> -->
+
+            <textarea rows="6" name="message" form="message-form"></textarea>
+
+
+            <input type="submit" value="Send message" id="send-button">
           </form>
+    </section>
+
+    <section id="map-section">
+        <h3>Postal address</h3>
+        <p>232 Clarendon Street, South Melbourne<br>
+            VIC 3205</p>
+
+            <!-- https://www.embedgooglemap.net/ -->
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="650" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=232%20Clarendon%20Street%20South%20Melbourne&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:650px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:650px;}</style></div>
+    </section>
+    
+    <section>
+        <p><b>RTO Number:</b> 41206</p>
+        <p><b>ABN:</b> 32 606 780 214</p>
+        <p>To obtain a copy of <i>alffie's</i> Complaints & Appeals Policy click this <a href="https://assets.alffie.com/docs/Complaints_Appeals_and_Feedback.pdf">link</a>.</p>
+        <p>Or to obtain a copy of <i>alffie's</i> Student Handbook click this <a href="https://assets.alffie.com/docs/Student_Handbook.pdf">link</a>.</p>
+        <p>From 1 January 2015 all job seekers undertaking Nationally Recognised Training in Australia will need to have a USI, Unique Student Identifier. This government initiative requires job seekers to have a USI in order to receive accreditation. For more information, visit <a href="https://www.usi.gov.au">www.usi.gov.au</a> for more information.</p>
     </section>
 
     <footer>
@@ -124,13 +156,7 @@
    
     <script src="home.js"></script>
 
-    <!-- <script src="course-selector.js"></script> -->
-
     <script src="mobile-menu.js"></script>
-
-    <script src="course-carousel-repeat.js"></script>
-
-    <script src="covid-19-show-more.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

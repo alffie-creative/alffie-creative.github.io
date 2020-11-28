@@ -24,36 +24,16 @@ h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-size: 44px;
-    margin-bottom: 0em;
-    font-weight: 700;
-}
-
-h1 i {
-    font-weight: 800;
-}
-
 h2 {
     font-size: 40px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
-h2 i {
-    font-size: 30px;
-    font-weight: 800;
-}
-
 h3 {
     font-size: 18px;
     margin-bottom: 0px;
     font-weight: 700;
-}
-
-h3 i {
-    font-weight: 800;
-    font-size: 20px;
 }
 
 h4 {
@@ -72,116 +52,63 @@ li {
     list-style-type: armenian;
 }
 
-#login {
-    color: white;
-    margin-top: 14px;
-    background-color: #1FCED1;
-    padding: 10px 22px;
-    transition: 0.3s;
-}
-
-#login:hover {
-    background-color: #04b8bb;
-}
-
-#logo {
-    margin-top: 6px;
-    margin-left: 4.8%;
-    width: 100px;
-}
-
-#logo:hover {
-    opacity: 0.8;
-}
-
-#mobile-nav {
-    display: none;
-}
-
-#mobile-menu {
-    display: none;
-}
-
-.mobile-nav-link {
-    display: none;
-}
-
 section {
-    margin: 50px auto;
-    text-align: center;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    width: 650px;
 }
 
 #page-title {
-    font-size: 100px;
+    font-size: 80px;
+    margin-bottom: 0px;
 }
 
 #page-title-section {
-    margin-top: 120px;
-    width: 700px;
+    margin-top: 80px;
 }
 
 #page-title-section p {
-    width: 500px;
     margin: auto;
     margin-bottom: 20px;
 }
 
-#login-form {
-    margin: 100px auto;
-    margin-bottom: 150px;
-    max-width: 400px;
+#message-form {
+    margin: auto;
+    margin-bottom: 30px;
     background-color: white;
     padding: 30px;
     border: 1.5px solid #c9c8d3;
 }
 
-#alffie-logo {
-    width: 150px;
-    margin-left: -5px;
-    margin-bottom: 20px;
-}
-
-.email-password-label {
-    font-weight: 700;
-}
-
-
-.email-password-input {
+input, textarea {
     display: block;
     margin-top: 5px;
-    height: 30px;
+    margin-bottom: 30px;
     width: 100%;
     transition: 0.2s;
-    outline:none;
-    background-color: #b6eded;
+    outline: none;
+    background-color: #e6fcfc;
     border: none;
+    border-bottom: 1px solid #1FCED1;
 }
 
-.email-password-input:focus {
+input {
+    height: 30px;
+}
+
+textarea:focus, input:focus {
     border: 1.5px solid #1FCED1;
     outline:none;
 }
 
-#password-label {
-    margin-top: 30px;
-}
-
-#show-password-checkbox {
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-#show-password-label {
-    display: inline-block;
-}
-
 label {
+    font-weight: 700;
     margin-top: 0;
     display: inline-block;
 }
 
-#login-button {
+#send-button {
     display: block;
     width: auto;
     margin-top: 30px;
@@ -201,22 +128,17 @@ label {
     transition: 0.2s;
 }
 
-#login-button:hover {
+#send-button:hover {
     background-color:  #04b8bb;
 }
 
-#forgot-your-password {
-    display: block;
-    margin-top: 15px;
+section a {
+    font-weight: 700;
     color: #1FCED1;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.2s;
 }
 
-#forgot-your-password:hover {
+section a:hover {
     color: #04b8bb;
-    text-decoration: underline;
 }
 
 @media only screen and (max-width: 576px) {
