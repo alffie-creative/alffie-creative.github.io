@@ -77,6 +77,7 @@ section {
     text-align: left;
     overflow-y: hidden;
     max-width: 90%;
+    margin-bottom: 120px;
 }
 
 #page-title {
@@ -85,13 +86,12 @@ section {
 
 #page-title-section {
     margin-top: 120px;
-    width: 700px;
+    width: 90%;
 }
 
 #page-title-section p {
-    width: 500px;
-    margin: auto;
     margin-bottom: 20px;
+    max-width: 650px;
 }
 
 #purpose-mission-section {
@@ -100,32 +100,34 @@ section {
 
 .purpose-mission {
     display: inline-block;
-    width: 500px;
+    max-width: 500px;
     vertical-align: top;
-}
-
-#about-feature-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 30px;
 }
 
 .about-feature {
     display: inline-block;
     width: 300px;
-    margin: 20px;
+    margin: 30px;
     vertical-align: top;
-}
-
-#who-we-serve-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .industry {
     display: inline-block;
-    width: 550px;
+    width: 500px;
     margin: 20px;
     vertical-align: top;
+}
+
+.obsession {
+    vertical-align: top;
+    display: inline-block;
+    width: 300px;
+    margin: 30px;
+}
+
+.obsession img {
+    width: 150px;
 }
 
 @media only screen and (max-width: 660px) {
