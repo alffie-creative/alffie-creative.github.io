@@ -17,19 +17,54 @@
 </head>
 <body>
 
-    <section id="login-form" data-aos="fade-up" data-aos-duration="500">
-        <a href="index.html"><img src="images/alffie-logo-aqua.svg" alt="" id="alffie-logo"></a>
-        <p>Hello. Please login to your <em>alffie</em> account</p>
-        <form action="/action_page.php">
-            <label for="email" class="email-password-label">Email</label>
-            <input type="email" id="email" name="email" class="email-password-input">
-            <label for="password" id="password-label" class="email-password-label">Password</label>
-            <input type="password" id="password" name="password" class="email-password-input">
-            <input type="checkbox" id="show-password-checkbox" value="sdf" name="Show password">
-            <label for="checkbox" id="show-password-label">Show password</label>
-            <p><a href="" id="forgot-your-password">Forgotten your password?</a></p>
-            <input type="submit" value="Login" id="login-button">
-          </form>
+    <div id="alert-and-menu-container">
+        <div id="alert-above-nav">
+            <p><i>alffie</i> will be closed for the Victorian Labour Day public holiday on Tuesday the 5th</p>
+            <img src="images/cross.svg" alt="Close" id="x-container">
+        </div>
+        <nav>
+            <a href="index.html" id="logo"><img src="images/alffie-logo-aqua.svg" alt="alffie logo"></a>
+            <span id="nav-link-container">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="meet-alffie.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html" id="login">Login</a>
+            </span>
+        </nav>
+
+        <div id="mobile-nav">
+            <span id="mobile-menu-button">
+                <div class="menu-button-line"></div>
+                <div class="menu-button-line"></div>
+                <div class="menu-button-line"></div>
+            </span>
+            <a href="index.html" id="mobile-logo"><img src="images/alffie-logo-aqua.svg" alt="alffie logo"></a>
+            <a href="login.html" id="mobile-login">Login</a>
+        </div>
+        <span id="mobile-menu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="meet-alffie.html" class="mobile-nav-link">About</a>
+            <a href="courses.html" class="mobile-nav-link">Courses</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </span>
+    </div>
+
+    <section>
+        <div id="login-form" data-aos="fade-up" data-aos-duration="500">
+            <a href="index.html"><img src="images/alffie-logo-aqua.svg" alt="" id="alffie-logo"></a>
+            <p>Please login to your <i>alffie</i> account</p>
+            <form action="/action_page.php">
+                <label for="email" class="email-password-label">Email</label>
+                <input type="email" id="email" name="email" class="email-password-input">
+                <label for="password" id="password-label" class="email-password-label">Password</label>
+                <input type="password" id="password" name="password" class="email-password-input">
+                <input type="checkbox" id="show-password-checkbox" value="sdf" name="Show password">
+                <label for="checkbox" id="show-password-label">Show password</label>
+                <p><a href="" id="forgot-your-password">Forgotten your password?</a></p>
+                <input type="submit" value="Login" id="login-button">
+            </form>
+            </div>
     </section>
 
     <footer>
@@ -86,6 +121,8 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="home.js"></script>
 
     <script>
         AOS.init();

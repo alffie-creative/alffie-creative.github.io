@@ -6,7 +6,7 @@
   }
   
   body {
-      background-color: white;
+      background-color: whitesmoke;
       margin: 0 auto;
       font-family: 'Roboto', sans-serif;
   }
@@ -24,13 +24,17 @@ p{
     margin-top: 0px;
 }
 
+section {
+    padding-top: 250px;
+}
+
 #login-form {
-    margin: 100px auto;
+    padding-top: 300px;
+    margin: auto;
     margin-bottom: 150px;
     max-width: 400px;
     background-color: white;
     padding: 30px;
-    border: 1.5px solid #c9c8d3;
 }
 
 #alffie-logo {
